@@ -8,6 +8,10 @@
       content="Guia publica sanitizada del viaje por Praga, Salzburgo, Tirol y Munich."
     />
     <title>Guia Praga, Austria y Baviera 2026</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -19,6 +23,7 @@
         </button>
         <div class="site-nav" id="site-nav">
           <a href="#ruta">Ruta</a>
+          <a href="#mapa">Mapa</a>
           <a href="#planes">Planes</a>
           <a href="#transporte">Transporte</a>
           <a href="#checklist">Pendientes</a>
@@ -93,6 +98,34 @@
         </div>
 
         <div class="route-detail" id="route-detail" aria-live="polite"></div>
+      </section>
+
+      <section class="content-section map-section" id="mapa">
+        <div class="section-heading with-action">
+          <div>
+            <p class="eyebrow">Mapa publico</p>
+            <h2>Ubicaciones para orientarse</h2>
+            <p>
+              Bases, excursiones, lagos, pueblos y comida que ya han salido en la conversacion.
+              Los hoteles concretos y reservas se mantienen solo en Drive.
+            </p>
+          </div>
+          <div class="map-filters" aria-label="Filtrar mapa">
+            <button type="button" class="map-filter active" data-map-filter="all">Todo</button>
+            <button type="button" class="map-filter" data-map-filter="base">Bases</button>
+            <button type="button" class="map-filter" data-map-filter="agua">Agua</button>
+            <button type="button" class="map-filter" data-map-filter="pueblo">Pueblos</button>
+            <button type="button" class="map-filter" data-map-filter="comida">Comida</button>
+          </div>
+        </div>
+        <div class="map-shell">
+          <div id="trip-map" class="trip-map" aria-label="Mapa interactivo del viaje"></div>
+          <aside class="map-list" aria-label="Listado de ubicaciones del mapa">
+            <h3>Capas del mapa</h3>
+            <p>Selecciona una capa para limpiar el mapa y ver solo lo que interesa en ese momento.</p>
+            <div id="map-location-list"></div>
+          </aside>
+        </div>
       </section>
 
       <section class="content-section" id="itinerario">
@@ -259,6 +292,7 @@
       </section>
     </main>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
