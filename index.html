@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Guia publica sanitizada del viaje por Praga, Salzburgo, Tirol y Munich."
+    />
+    <title>Guia Praga, Austria y Baviera 2026</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="topbar" aria-label="Navegacion principal">
+        <a class="brand" href="#inicio">Praga & Baviera</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="site-nav" id="site-nav">
+          <a href="#ruta">Ruta</a>
+          <a href="#planes">Planes</a>
+          <a href="#transporte">Transporte</a>
+          <a href="#checklist">Pendientes</a>
+        </div>
+      </nav>
+      <div class="hero-copy">
+        <p class="kicker">Guia publica sanitizada</p>
+        <h1>Praga, Austria y Baviera 2026</h1>
+        <p>
+          Una ruta tranquila por ciudades historicas, lagos alpinos y pueblos bavaros,
+          pensada para viajar con buen ritmo, equipaje ligero y margen para improvisar.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="summary-band" aria-label="Resumen del viaje">
+        <div>
+          <span>4 bases</span>
+          <strong>Praga · Salzburgo · Tirol · Munich</strong>
+        </div>
+        <div>
+          <span>Ritmo</span>
+          <strong>Comodo, con bebe y dias flexibles</strong>
+        </div>
+        <div>
+          <span>Clave logistica</span>
+          <strong>Fussen desde Munich, sin maletas</strong>
+        </div>
+      </section>
+
+      <section class="content-section intro-grid" id="privacidad">
+        <div>
+          <p class="eyebrow">Como esta organizada</p>
+          <h2>Lo publico es una guia; lo sensible queda en Drive</h2>
+        </div>
+        <div class="privacy-list">
+          <article>
+            <h3>En esta web</h3>
+            <p>Ruta general, ideas por zona, transporte orientativo, lagos, clima, comidas y decisiones abiertas.</p>
+          </article>
+          <article>
+            <h3>En el documento privado</h3>
+            <p>Reservas, telefonos, enlaces internos, condiciones, hoteles concretos y cualquier detalle operativo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section route-section" id="ruta">
+        <div class="section-heading">
+          <p class="eyebrow">Ruta</p>
+          <h2>Cuatro bases, con Munich como final practico</h2>
+          <p>
+            La ruta evita anadir Suiza al final y concentra Baviera desde Munich para
+            reducir cambios de alojamiento y traslados con equipaje.
+          </p>
+        </div>
+
+        <div class="route-map" aria-label="Ruta por etapas">
+          <button class="route-stop active" type="button" data-stop="praga">
+            <span>1</span>Praga
+          </button>
+          <button class="route-stop" type="button" data-stop="salzburgo">
+            <span>2</span>Salzburgo
+          </button>
+          <button class="route-stop" type="button" data-stop="tirol">
+            <span>3</span>Tirol
+          </button>
+          <button class="route-stop" type="button" data-stop="munich">
+            <span>4</span>Munich
+          </button>
+        </div>
+
+        <div class="route-detail" id="route-detail" aria-live="polite"></div>
+      </section>
+
+      <section class="content-section" id="itinerario">
+        <div class="section-heading with-action">
+          <div>
+            <p class="eyebrow">Itinerario orientativo</p>
+            <h2>Planes por tramo</h2>
+          </div>
+          <div class="filters" aria-label="Filtrar por zona">
+            <button type="button" class="filter active" data-filter="all">Todo</button>
+            <button type="button" class="filter" data-filter="ciudad">Ciudad</button>
+            <button type="button" class="filter" data-filter="naturaleza">Naturaleza</button>
+            <button type="button" class="filter" data-filter="agua">Agua</button>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="cards-grid">
+          <article class="place-card" data-tags="ciudad" data-area="Praga">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Czech-2013-Prague-View_from_Charles_Bridge_of_Prague_Castle.jpg" alt="Vista de Praga desde el Puente de Carlos" />
+            <div>
+              <p class="card-label">Praga</p>
+              <h3>Ciudad Vieja, Castillo y Mala Strana</h3>
+              <p>Primer tramo urbano: plazas, puentes, vistas y barrios historicos. Conviene elegir pocos planes por dia y no intentar verlo todo.</p>
+              <ul>
+                <li>Puente de Carlos al atardecer si hay energia.</li>
+                <li>Castillo con portabebe o carrito robusto.</li>
+                <li>Havelska Koruna como comida checa barata.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="place-card" data-tags="ciudad naturaleza agua" data-area="Salzburgo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Old_Town_Salzburg_across_the_Salzach_river.jpg" alt="Casco antiguo de Salzburgo junto al rio Salzach" />
+            <div>
+              <p class="card-label">Salzburgo</p>
+              <h3>Casco antiguo y lagos del Salzkammergut</h3>
+              <p>Base ideal para combinar centro historico con un dia de lago si la meteo acompana.</p>
+              <ul>
+                <li>Mirabell, Catedral y Getreidegasse.</li>
+                <li>Wolfgangsee o Fuschlsee como plan de agua.</li>
+                <li>Hallstatt solo si compensa la posible saturacion.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="place-card" data-tags="ciudad naturaleza agua" data-area="Tirol">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Innsbruck_Panorama_Nordkette_3.jpg" alt="Panorama de Innsbruck con la Nordkette al fondo" />
+            <div>
+              <p class="card-label">Innsbruck / Tirol</p>
+              <h3>Montana facil desde una ciudad compacta</h3>
+              <p>Tramo alpino para mirar el cielo cada manana y elegir entre ciudad, teleferico o excursion corta.</p>
+              <ul>
+                <li>Nordkette si hace buen tiempo.</li>
+                <li>Seefeld, Hall in Tirol o Swarovski.</li>
+                <li>Baggersee o Aqua Dome si apetece agua.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="place-card" data-tags="ciudad naturaleza" data-area="Munich">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Rathaus_and_Marienplatz_from_Peterskirche_-_August_2006.jpg" alt="Marienplatz y el Nuevo Ayuntamiento de Munich" />
+            <div>
+              <p class="card-label">Munich</p>
+              <h3>Base final para ciudad, lagos y Baviera</h3>
+              <p>Munich funciona como base: ciudad sin coche y excursiones elegidas segun ganas y clima.</p>
+              <ul>
+                <li>Marienplatz, Viktualienmarkt y Englischer Garten.</li>
+                <li>Starnberger See o Therme Erding como comodines.</li>
+                <li>Regensburg o Bamberg si se prefiere tren.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="place-card feature" data-tags="naturaleza" data-area="Baviera">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Neuschwanstein_Castle_from_Marienbr%C3%BCcke%2C_2011_May.jpg" alt="Castillo de Neuschwanstein desde Marienbrucke" />
+            <div>
+              <p class="card-label">Baviera</p>
+              <h3>Fussen y Neuschwanstein, mejor sin equipaje</h3>
+              <p>La idea practica es llegar antes a Munich y hacer castillos desde alli, evitando una jornada pesada con maletas.</p>
+              <ul>
+                <li>Decidir interior del castillo o exterior + lago.</li>
+                <li>Coche util si se suman paradas alpinas.</li>
+                <li>Tren + bus viable si el plan es solo castillo.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section split-section" id="transporte">
+        <div class="section-heading">
+          <p class="eyebrow">Transporte</p>
+          <h2>Tren como base, coche solo si aporta libertad</h2>
+        </div>
+        <div class="tabs" data-tabs>
+          <div class="tab-buttons" role="tablist" aria-label="Transporte">
+            <button type="button" class="tab-button active" role="tab" aria-selected="true" data-tab="tren">Tren</button>
+            <button type="button" class="tab-button" role="tab" aria-selected="false" data-tab="coche">Coche</button>
+            <button type="button" class="tab-button" role="tab" aria-selected="false" data-tab="maleta">Equipaje</button>
+          </div>
+          <div class="tab-panel active" role="tabpanel" data-panel="tren">
+            <h3>Entre bases</h3>
+            <p>La estructura esta pensada para enlazar las cuatro bases en tren: Praga, Salzburgo, Innsbruck y Munich.</p>
+            <p>La ventaja es reducir gestiones, aparcamiento y cansancio en dias de traslado.</p>
+          </div>
+          <div class="tab-panel" role="tabpanel" data-panel="coche">
+            <h3>Solo para excursiones</h3>
+            <p>No parece necesario para ciudad. Si se alquila, tiene sentido para Fussen, castillos, Alpes, lagos o varios pueblos en el mismo dia.</p>
+            <p>La decision abierta es si basta con un dia o compensa ampliar a dos.</p>
+          </div>
+          <div class="tab-panel" role="tabpanel" data-panel="maleta">
+            <h3>Evitar dias densos</h3>
+            <p>El punto mas importante es no mezclar traslado largo, castillos y maletas en la misma jornada.</p>
+            <p>Por eso Fussen/Neuschwanstein queda mejor como excursion desde Munich.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section public-notes" id="planes">
+        <div class="section-heading">
+          <p class="eyebrow">Ideas utiles</p>
+          <h2>Lagos, dulces y clima</h2>
+        </div>
+        <div class="notes-grid">
+          <article>
+            <h3>Lagos y termas</h3>
+            <p>Wolfgangsee, Fuschlsee, Starnberger See y Therme Erding son los comodines mas claros. El tramo de Salzburgo es el mejor candidato para un dia de lago.</p>
+          </article>
+          <article>
+            <h3>Dulces en Praga</h3>
+            <p>Trdelnik, venecek e indian quedan fichados. Para merienda bonita: Cafe Savoy. Para obrador moderno: Eska.</p>
+          </article>
+          <article>
+            <h3>Maleta</h3>
+            <p>Ropa de verano, sudadera ligera, chubasquero fino y calzado comodo. Puede haber dias templados y tambien algun pico de calor.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section checklist-section" id="checklist">
+        <div class="section-heading">
+          <p class="eyebrow">Checklist publico</p>
+          <h2>Decisiones abiertas</h2>
+          <p>Marcarlas aqui solo afecta a este navegador. La decision real se guarda en el documento privado del grupo.</p>
+        </div>
+        <div class="checklist" id="decision-list"></div>
+      </section>
+
+      <section class="content-section credits" id="creditos">
+        <h2>Creditos y privacidad</h2>
+        <p>
+          Esta web es la capa publica y no contiene datos sensibles. El detalle operativo vive en el documento privado del grupo.
+        </p>
+        <details>
+          <summary>Creditos de imagenes</summary>
+          <ul>
+            <li>Praga: Godot13, CC BY-SA 4.0, Wikimedia Commons.</li>
+            <li>Salzburgo: Jiuguang Wang, CC BY-SA 3.0, Wikimedia Commons.</li>
+            <li>Innsbruck: bohringer friedrich, CC BY-SA 2.5, Wikimedia Commons.</li>
+            <li>Munich: Diliff, CC BY-SA 3.0, Wikimedia Commons.</li>
+            <li>Neuschwanstein: Ximonic / Simo Rasanen / Tauno Rasanen, CC BY-SA 3.0, Wikimedia Commons.</li>
+          </ul>
+        </details>
+      </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
