@@ -244,6 +244,31 @@ p {
   padding: 22px;
 }
 
+.transfer-list {
+  margin: 18px 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.transfer-list li {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #f9fbfb;
+  color: var(--ink);
+}
+
+.transfer-list span {
+  color: var(--teal-dark);
+  font-weight: 800;
+}
+
 .section-heading {
   max-width: 780px;
   margin-bottom: 28px;
