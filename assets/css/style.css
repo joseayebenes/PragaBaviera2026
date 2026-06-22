@@ -323,6 +323,103 @@ p {
   margin-bottom: 0;
 }
 
+.day-timeline {
+  position: relative;
+  display: grid;
+  gap: 12px;
+}
+
+.day-timeline::before {
+  content: "";
+  position: absolute;
+  left: 108px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--line);
+}
+
+.day-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.day-card time {
+  position: sticky;
+  top: 18px;
+  z-index: 1;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--teal-dark);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.day-card > div {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+
+.day-card > div::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid var(--surface);
+  border-radius: 999px;
+  background: var(--teal);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.day-card h3 {
+  margin-top: 8px;
+}
+
+.day-card p {
+  margin-bottom: 0;
+}
+
+.day-pill {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0 10px;
+  color: #fff;
+  background: var(--teal);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.day-pill-city {
+  background: var(--teal-dark);
+}
+
+.day-pill-water {
+  background: var(--blue);
+}
+
+.day-pill-nature {
+  background: var(--wine);
+}
+
+.day-pill-transfer {
+  background: var(--gold);
+}
+
 .filters,
 .tab-buttons,
 .map-filters {
@@ -653,6 +750,27 @@ summary {
 
   .route-map::before {
     display: none;
+  }
+
+  .day-timeline::before {
+    left: 20px;
+  }
+
+  .day-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-left: 44px;
+  }
+
+  .day-card time {
+    position: static;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 0 12px;
+  }
+
+  .day-card > div::before {
+    left: -32px;
   }
 
   .place-card,
