@@ -170,6 +170,12 @@ const mapLocations = [
     note: 'Restaurante barato de comida checa en Praga, guardado por el grupo.'
   },
   {
+    name: 'Museo Nacional de Praga',
+    category: 'pueblo',
+    coords: [50.0794, 14.4309],
+    note: 'Idea cultural cerca de Wenceslao. La gratuidad mensual no coincide con la estancia, revisar precio y horario.'
+  },
+  {
     name: 'Cafe Savoy',
     category: 'comida',
     coords: [50.0812, 14.4073],
