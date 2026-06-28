@@ -7,7 +7,7 @@ const routeData = {
   salzburgo: {
     title: 'Salzburgo y Salzkammergut',
     text: 'Base para combinar casco antiguo con lagos. El gran dilema es Hallstatt o una alternativa menos saturada.',
-    bullets: ['St. Gilgen + Wolfgangsee es flexible.', 'Fuschlsee encaja como dia de lago.', 'RupertusTherme funciona como plan de lluvia.']
+    bullets: ['St. Gilgen + Wolfgangsee es flexible.', 'Fuschlsee encaja como dia de lago.', 'Salzachsee sirve para un chapuzon urbano corto.']
   },
   tirol: {
     title: 'Innsbruck / Tirol',
@@ -22,11 +22,11 @@ const routeData = {
 };
 
 const decisions = [
-  'Elegir alojamiento definitivo en cada base',
+  'Dar un ultimo vistazo al alojamiento de Munich',
   'Decidir Hallstatt o Wolfgangsee/St. Gilgen',
   'Elegir Neuschwanstein interior o exterior/lago',
-  'Decidir coche de alquiler: un dia o dos',
-  'Cerrar trenes entre bases',
+  'Confirmar coche de alquiler para excursiones',
+  'Cerrar transportes entre bases en webs oficiales',
   'Preparar lista de dulces tipicos de Praga'
 ];
 
@@ -72,6 +72,12 @@ const mapLocations = [
     category: 'agua',
     coords: [47.8070, 13.2920],
     note: 'Alternativa directa para dia de lago desde Salzburgo.'
+  },
+  {
+    name: 'Salzachsee / Badesee Liefering',
+    category: 'agua',
+    coords: [47.8359, 13.0191],
+    note: 'Lago urbano de bano en Salzburgo para un chapuzon corto o descanso sin excursion larga.'
   },
   {
     name: 'RupertusTherme',
