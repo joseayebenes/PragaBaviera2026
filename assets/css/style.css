@@ -417,6 +417,53 @@ p {
   margin-bottom: 0;
 }
 
+.day-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.day-detail-grid section {
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #f9fbfb;
+}
+
+.day-detail-grid h4 {
+  margin: 0 0 8px;
+  color: var(--teal-dark);
+  font-size: 0.86rem;
+}
+
+.day-detail-grid ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.day-detail-grid li {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.guide-note {
+  margin-top: 14px;
+  padding-left: 14px;
+  border-left: 3px solid var(--gold);
+}
+
+.day-sources {
+  margin-top: 12px;
+  font-size: 0.86rem;
+}
+
+.day-sources a {
+  color: var(--teal-dark);
+  font-weight: 700;
+}
+
 .day-pill {
   display: inline-flex;
   min-height: 28px;
@@ -796,6 +843,10 @@ summary {
 
   .day-card > div::before {
     left: -32px;
+  }
+
+  .day-detail-grid {
+    grid-template-columns: 1fr;
   }
 
   .place-card,
