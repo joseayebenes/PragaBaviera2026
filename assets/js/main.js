@@ -27,7 +27,7 @@ const decisions = [
   'Elegir Neuschwanstein interior o exterior/lago',
   'Confirmar coche de alquiler para excursiones',
   'Cerrar transportes entre bases en webs oficiales',
-  'Preparar lista de dulces tipicos de Praga'
+  'Ordenar paradas literarias y dulces de Praga'
 ];
 
 const mapLocations = [
@@ -174,6 +174,24 @@ const mapLocations = [
     category: 'comida',
     coords: [50.0832, 14.4230],
     note: 'Restaurante barato de comida checa en Praga, guardado por el grupo.'
+  },
+  {
+    name: 'Idiom / Biblioteca Municipal',
+    category: 'pueblo',
+    coords: [50.0874, 14.4172],
+    note: 'Torre infinita de libros. Parada corta, centrica y cubierta; revisar horarios antes de ir.'
+  },
+  {
+    name: 'Biblioteca de Strahov',
+    category: 'pueblo',
+    coords: [50.0861, 14.3894],
+    note: 'Biblioteca historica muy visual junto a Strahov. Mejor combinarla con la zona del Castillo o miradores.'
+  },
+  {
+    name: 'Clementinum',
+    category: 'pueblo',
+    coords: [50.0866, 14.4168],
+    note: 'Biblioteca barroca y torre astronomica en visita guiada; valorar escalones con porteo.'
   },
   {
     name: 'Museo Nacional de Praga',
