@@ -16,7 +16,7 @@ const routeData = {
   },
   munich: {
     title: 'Munich y Baviera',
-    text: 'Base final para ciudad, castillos, lagos y pueblos. El coche solo compensa si abre excursiones.',
+    text: 'Base final para ciudad, castillos, lagos y pueblos. Neuschwanstein ya queda como excursion con entrada oficial.',
     bullets: ['Fussen/Neuschwanstein sin equipaje.', 'Ciudad en transporte publico.', 'Alpes o ruta medieval si hay coche.']
   }
 };
@@ -24,7 +24,7 @@ const routeData = {
 const decisions = [
   'Dar un ultimo vistazo al alojamiento de Munich',
   'Decidir Hallstatt o Wolfgangsee/St. Gilgen',
-  'Elegir Neuschwanstein interior o exterior/lago',
+  'Ajustar la logistica de Fussen y Neuschwanstein',
   'Confirmar coche de alquiler para excursiones',
   'Cerrar transportes entre bases en webs oficiales',
   'Ordenar paradas literarias y dulces de Praga'
@@ -80,6 +80,12 @@ const mapLocations = [
     note: 'Lago urbano de bano en Salzburgo para un chapuzon corto o descanso sin excursion larga.'
   },
   {
+    name: 'Almkanal',
+    category: 'agua',
+    coords: [47.7850, 13.0340],
+    note: 'Idea urbana de agua en Salzburgo para dias calurosos. Pendiente confirmar punto exacto, corriente y comodidad con bebe.'
+  },
+  {
     name: 'RupertusTherme',
     category: 'agua',
     coords: [47.7265, 12.8784],
@@ -101,7 +107,7 @@ const mapLocations = [
     name: 'Fussen / Neuschwanstein',
     category: 'pueblo',
     coords: [47.5576, 10.7498],
-    note: 'Excursion clave desde Munich. Mejor sin equipaje y decidir interior o exterior + lago.'
+    note: 'Excursion clave desde Munich con entrada oficial al castillo. Mantener margen y no mezclar con maletas.'
   },
   {
     name: 'Starnberger See',
